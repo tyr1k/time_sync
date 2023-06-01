@@ -1,0 +1,9 @@
+[Unit]
+Description=Time Sync Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/time_sync.sh
+
+[Install]
+WantedBy=default.target
